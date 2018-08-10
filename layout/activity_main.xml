@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape2"
+            android:scaleType="centerInside"
+            android:src="@drawable/dog1" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape2"
+            android:scaleType="centerInside"
+            android:src="@drawable/dog1" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape2"
+            android:scaleType="centerInside"
+            android:src="@drawable/dog1" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape2"
+            android:scaleType="centerInside"
+            android:src="@drawable/dog1" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageMain"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape2"
+        android:scaleType="centerInside"
+        android:src="@drawable/dog1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/shape"
+        android:text="NEXT"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button"
+
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:textColor="#16e25a"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/textViewStatus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:text="" />
+
+    <ImageView
+        android:id="@+id/mickyhappy"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="71dp"
+        android:layout_toStartOf="@+id/imageMain"
+        app:srcCompat="@drawable/mickyhappy" />
+
+    <ImageView
+        android:id="@+id/mickyupset"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/button"
+        android:layout_toStartOf="@+id/imageMain"
+        app:srcCompat="@drawable/mickeyupset" />
+
+
+</RelativeLayout>
